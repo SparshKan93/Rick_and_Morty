@@ -3,8 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import OnBoarding from '@/components/OnBoarding'; 
 import Card from '@/components/Card'; 
-import Detail from '@/components/Detail'; 
-import SearchPage from '@/components/SearchPage'; 
+import Detail from '@/components/Detail';  
 import Home from '@/components/Home'; 
 
 const Stack = createNativeStackNavigator();
@@ -17,7 +16,6 @@ export default function App() {
         <Stack.Screen name="Home" component={Home}  />
         <Stack.Screen name="Card" component={Card}  />
         <Stack.Screen name="Detail" component={Detail}  />
-        <Stack.Screen name="SearchPage" component={SearchPage}  />
       </Stack.Navigator>
     </NavigationContainer>
   );
